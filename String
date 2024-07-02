@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -12,7 +13,8 @@
     var title = "Hello World";
     var name = "Tarmeez Channel";
 
-    console.log(title + " " + name); // Outputs: Hello World Tarmeez Channel
+    console.log(title + " " + name + ", Welcom to Tarmeez Channel") ; // Outputs: Hello World Tarmeez Channel
+   console.log(`Hello ${name} ,Welcom To Tarmeez Channel`)
 
     console.log(title.substring(0, 7)); // Outputs: Hello W
     console.log(title.length); // Outputs: 11 (length of the string)
