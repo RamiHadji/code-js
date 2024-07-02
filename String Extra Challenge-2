@@ -1,1 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>String Challenge 2</h2>
+    <input id="string-input-text" type = "text">
+    <button id="submit-btn">submit</button>
+    <h3 id="result"></h3>
+</body>
+<script>
+    document.getElementById("submit-btn").addEventListener("click", function(){
+        var userInput = document.getElementById("string-input-text").value; // Retrieve user input from input field
+        console.log("User Input:", userInput);
+
+        var allCaps = userInput.toUpperCase(); // Convert user input to uppercase
+        var replaceO = allCaps.replace(/O/g, "Y"); // Replace all occurrences of 'O' with 'Y'
+        var reverseStr = replaceO.split("").reverse().join(""); // Reverse the string
+
+        // Display the results in the HTML document
+        document.getElementById("result").innerHTML = `${allCaps} --- ${replaceO} --- ${reverseStr}`;
+        console.log("Reversed:", reverseStr);
+    });
+</script>
+</html>
 
