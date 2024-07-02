@@ -1,1 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2> numbers in Java Script</h2>
+    
+</body>
+<script>
+    var x = "20"
+    var y ="30"
+    var z = x + y
+    var A = x *y
+    console.log(z)
+  console.log(isNaN(z))  
+    console.log(A)
+    console.log(Math.max(x, y, 30, 40, 60, 10 ,35))
+    console.log(Math.min(x, y, 30, 40, 60, 10 ,35))
+</script>
+</html>
 
