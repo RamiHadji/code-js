@@ -1,1 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Data Tybes</h2>
+   
 
+</body>
+<script>
+    var name = "Rami"
+    var age = 50
+    typeof "Hello World"
+    console.log(typeof "Hello World")
+    console.log(typeof 10)
+    console.log(typeof 10.5)
+    console.log(typeof age)
+    console.log(typeof name)
+    console.log("hi")
+    console.log(20)
+
+
+</script>
+</html>
