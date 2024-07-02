@@ -7,15 +7,23 @@
 </head>
 <body>
     <h2>String</h2>
-   
-
 </body>
 <script>
-    var title = "Hello World"
-    
-    console.log(title.substring(0, 7)) // Hello W
-    console.log(title.length)// 11
-    console.log(title.toUpperCase()) // HELLO WORLD
+    var title = "Hello World";
+    var name = "Tarmeez Channel";
 
+    console.log(title + " " + name); // Outputs: Hello World Tarmeez Channel
+
+    console.log(title.substring(0, 7)); // Outputs: Hello W
+    console.log(title.length); // Outputs: 11 (length of the string)
+    console.log(title.toUpperCase()); // Outputs: HELLO WORLD
+    console.log(title.toLowerCase()); // Outputs: hello world
+    console.log(title.replace("Hello", "Hi")); // Outputs: Hi World
+    var titleLowerCased = title.toLowerCase();
+    console.log(titleLowerCased.replace("hello", "r")); // Outputs: hello world (no change because "hello" is not found)
+    console.log(title.charAt(1)); // Outputs: e (character at index 1)
+    var myChar = title.charAt(6);
+    console.log(myChar); // Outputs: W (character at index 6, W in "World")
+    console.log(title[9]); // Outputs: l (character at index 9)
 </script>
 </html>
