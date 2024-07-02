@@ -1,1 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Arithmetic-Operators</h2>
 
+</body>
+<script>
+    var h = "hello"
+    var x = 100 + 200
+    x = x + 1
+    //or
+    x++
+    //or
+    x+= 1 ; 10 ;20 
+    var y = 100 - 200
+    var z = x * y
+    var a = z * 5 -20 + 100
+
+    console.log(10)
+    console.log(5 + 5)
+    console.log(x)
+    console.log(y)
+    console.log(z)
+    console.log(a)
+    console.log(h + 10)
+    console.log(h + " world")
+
+
+</script>
+</html>
