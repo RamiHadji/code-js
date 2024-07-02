@@ -13,8 +13,9 @@
 <script>
     var title = "Hello World"
     
-    console.log(title.substring(0, 7))
-    console.log(title.length)
+    console.log(title.substring(0, 7)) // Hello W
+    console.log(title.length)// 11
+    console.log(title.toUpperCase()) // HELLO WORLD
 
 </script>
 </html>
