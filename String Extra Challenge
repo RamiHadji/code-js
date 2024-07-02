@@ -1,1 +1,46 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2> String Challenge</h2>
+    <h2 id="title">Hello World</h2>
+
+</body>
+<script>
+    var myStr =  document.getElementById("title").innerHTML
+    console.log(myStr)
+   // var myStr = "Hello World";
+    
+   // console.log(myStr); // Outputs: Hello World
+
+   // console.log(myStr.toUpperCase()); // Outputs: HELLO WORLD
+
+  //  console.log(myStr.replace("o", "Y")); // Outputs: HellY World
+    var allCaps = myStr.toUpperCase()
+   // console.log(allCaps)
+    var replaceO = allCaps.replace("O","Y")
+    //console.log(replaceO)
+   var reverseSte = replaceO.split("").reverse().join("");
+   //console.log(reverseSte)
+   var myStr = document.getElementById("title").innerHTML; // Retrieve the content of <h2 id="title">
+    console.log(myStr); // Outputs: Hello World
+
+    var allCaps = myStr.toUpperCase(); // Convert to uppercase
+    console.log(allCaps); // Outputs: HELLO WORLD
+
+    var replaceO = allCaps.replace("O", "Y"); // Replace 'O' with 'Y'
+    console.log(replaceO); // Outputs: HELLy WORLD
+
+    var reverseStr = replaceO.split("").reverse().join(""); // Reverse the string
+    console.log(reverseStr); // Outputs: DLROw YLLEH
+   
+   
+  
+</script>
+</html>
 
