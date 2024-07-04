@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conditional Phrase Challenge - BMI Calculator</title>
+</head>
+<body>
+
+ <div id="Calculator">
+
+      <h2>Conditional Phrase Challenge - BMI Calculator</h2>
+    <div>
+        <h3>Weight</h3>
+        <input type="text" id="weight-input"><br>
+    </div>
+   
+      <div>
+      <h3>Height</h3>
+         <input type="text" id="height-input"><br>
+    
+      </div>
+      <br>
+      <input id="submit-btn" type="button" value="Calculator">
+
+      <div>
+        <h4 id="bmi"></h4>
+        <h3 id="bmi-category"></h3>
+      </div>
+     </div>
+<style>
+    #Calculator{
+        background-color: aquamarine;
+        text-align: center;
+    }
+</style>
+</body>
+<script>
+
+document.getElementById("submit-btn").addEventListener("click", function(){
+           var weight = document.getElementById("weight-input").value;
+           var height = document.getElementById("height-input").value;
+//console.log(weight, height)
+  //  console.log("clicked")
+
+    var bmi = weight/(height*height)
+    //console.log(bmi)
+    document.getElementById("bmi").innerHTML = bmi
+
+var bmiCategory = "slim"
+    if (bmi < 18){
+    bmiCategory = "slim"   // document.getElementById("bmi-category").innerHTML = "slim"
+    } else if (bmi < 24.9){
+        bmiCategory = "The weight is ideal"   // document.getElementById("bmi-category").innerHTML = "The weight is ideal"
+    }else if (bmi < 24.9){
+        bmiCategory = "The weight is ideal"  // document.getElementById("bmi-category").innerHTML = "ç"
+    }else if (bmi < 24.9){
+        bmiCategory = "First degree obesity" // document.getElementById("bmi-category").innerHTML = "First degree obesity"
+    }else if (bmi < 24.9){
+        bmiCategory = "Second degree obesity" // document.getElementById("bmi-category").innerHTML = "Second degree obesity"
+    }else {
+        bmiCategory = "Dangerous Third degree obesity" //  document.getElementById("bmi-category").innerHTML = "Dangerous Third degree obesity "
+    }
+    document.getElementById("bmi-category").innerHTML = bmiCategory
+})
+</script>
+</html>
