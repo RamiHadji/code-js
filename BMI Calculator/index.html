@@ -6,17 +6,19 @@
     <title>Conditional Phrase Challenge - BMI Calculator</title>
 </head>
 <body>
-
+<header>
+    <img src="https://img.icons8.com/?size=100&id=puNIvmJ2Etdf&format=png&color=000000">
+</header>
  <div id="Calculator">
 
       <h2>Conditional Phrase Challenge - BMI Calculator</h2>
     <div>
-        <h3>Weight</h3>
+        <h3>Weight (kg)</h3>
         <input type="text" id="weight-input"><br>
     </div>
    
       <div>
-      <h3>Height</h3>
+      <h3>Height (m)</h3>
          <input type="text" id="height-input"><br>
     
       </div>
@@ -29,9 +31,45 @@
       </div>
      </div>
 <style>
+    h2, h3{
+        color: #fff;
+    }
+    
     #Calculator{
-        background-color: aquamarine;
+        background-color: #38598b;
         text-align: center;
+        
+    }
+    header{
+        display: flex;
+        justify-content: center;
+        
+    }
+    input{
+        font-size: 20px;
+    }
+}
+    #height-input, #weight-input {
+        width: 180px;
+        padding: 20px;
+    }
+    #submit-btn {
+        border-radius: 12px;
+        background-color: #009CDE;
+        border: 1px solid #009CDE;
+        padding: 12px 24px;
+        color: #fff;
+        box-shadow: 0 2px 8px #6a6a6a66;
+        font-family: sans-serif;
+        font-weight: bold;
+        letter-spacing: 0;
+        line-height: 1.15;
+        min-width: 160px;
+        text-align: center;
+        text-decoration: none;
+        transition: box-shadow .25s cubic-bezier(.455,.03,.515,.955), transform .13s cubic-bezier(.455,.03,.515,.955);
+        vertical-align: middle;
+        cursor: pointer;
     }
 </style>
 </body>
