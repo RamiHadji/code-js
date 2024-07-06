@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrays Operations</title>
+</head>
+<body>
+    <h2>Arrays Operations</h2>
+    <div id="students" style="font-size: 30px;"></div>
+</body>
+<script>
+        var students = ["Yarob", "khaled", "Mohammed", "Omar", "Sami"]
+        console.log(typeof students)
+        document.getElementById("students").innerHTML = students
+        console.log(students)
+       // students.splice(3, 1)
+       // students.splice(2, 2 ,"Salem") // remove and add name
+        students.splice(2, 0 ,"Saleem", "Rami", "Jaber") //   add name
+        console.log(students)
+
+
+
+        // students.push("Salem")
+        // students.push("Domm")//add name
+        // students[1] = "Ammar" // change name
+        // students.pop()// remove name
+        // console.log(students)
+      //  console.log(students)
+        //console.log(students[0])
+</script>
+</html>
