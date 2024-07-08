@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Challenging Loop with String</title>
+</head>
+<body>
+    <h2>Challenging Loop with String</h2>
+    <div id="Vowel-Letters" style="text-align: center; font-size: 30px;">
+        <h2>Vowel Letters: (A, E, I, O, U)</h2>
+        <input type="text" id="Vowel-Letters-input">
+        <button id="submit-letters">Submit</button>
+        <h2 id="result"></h2>
+    </div>
+
+    <script>
+        document.getElementById("submit-letters").addEventListener("click", function(){
+            document.getElementById("result").innerHTML = ``
+            var text = document.getElementById("Vowel-Letters-input").value;
+            const vowels = ["a", "e", "i", "o", "u"];
+            document.getElementById("result").innerHTML = "";  // Clear previous results
+            
+            for (var char of text) {
+                var loweredChar = char.toLowerCase();
+                if (!vowels.includes(loweredChar)) {
+                    document.getElementById("result").innerHTML += `${char} <br>`;
+                }
+            }
+        });
+    </script>
+</body>
+</html>
