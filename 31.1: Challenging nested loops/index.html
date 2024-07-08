@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>31.1: Challenging nested loops</title>
+</head>
+<body>
+    <h2>31.1: Challenging nested loops</h2>
+<div id="reslts" style="font-size: 40px; text-align: center;"></div>
+</body>
+<script>
+
+    for (var i=1 ; i <=10 ; i++ ){
+        document.getElementById("reslts").innerHTML += `<h3> Multiplcation Table of ${i} </h3>`
+        for (var j=0 ; j<= 10; j++){
+            console.log(i, j , i*j)
+            
+            document.getElementById("reslts").innerHTML += `${i} X ${j} = ${i*j} <br>`
+        }
+        document.getElementById("reslts").innerHTML += `<hr>`
+    }
+  
+</script>
+</html>
