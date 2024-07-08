@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>24.1: Challenging Loops with Arrays</title>
+</head>
+<body>
+    <h2>Challenging Loops with Arrays</h2>
+    <div id="school-input" style="text-align: center; font-size: 30px;">
+        Find Student
+        <br>
+        <input id="school-into" type="text">
+        <button id="search-input">Search</button>
+        <div id="school" style="font-size: 20px;"></div>
+        <h2 id="result"></h2>
+    </div>
+    
+    <script>
+        var school = ["T.Yarob", "T.Ahmad", "Khaled", "Omar", "Jaber", "Berton", "Salem", "Sami"];
+
+        // Display all school members
+        for(var memberIndex = 0; memberIndex < school.length; memberIndex++){
+            document.getElementById("school").innerHTML += school[memberIndex] + " -- ";
+        }
+
+        // Search for a name in the school array
+        document.getElementById("search-input").addEventListener("click", function(){
+            var name = document.getElementById("school-into").value.toLowerCase();
+            var found = false;
+
+            for (var student of school){
+                if (name === student.toLowerCase()){
+                    document.getElementById("result").innerHTML = `${student} is in the school.`;
+                    found = true;
+                    break;
+                }
+            }
+
+            if (!found) {
+                document.getElementById("result").innerHTML = `${name} is not in the school.`;
+            }
+        });
+    </script>
+</body>
+</html>
